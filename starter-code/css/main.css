@@ -1,0 +1,18 @@
+/**
+ * Variables
+ **/ 
+
+:root {
+    --lt-white: #fff;
+    --lt-off-white: #F2F2F2;
+    --lt-slightly-off-white: #FEFCF7;
+    --lt-soft-peach: #FDD6BA;
+    --lt-gray: #F4F1EB;
+    --dk-forest-green: #0E8784;
+    --dk-gray-blue: #333D4B;
+    --dk-nimbus-gray: #2C343E;
+    --dk-cloudy-gray: #83888F;
+    --dk-modal-gray: #979797; 
+    --primary-font-family: "Fraunces", serif;
+    --secondary-font-family: "Barlow", sans-serif;
+}
