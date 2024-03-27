@@ -13,6 +13,42 @@
     --dk-nimbus-gray: #2C343E;
     --dk-cloudy-gray: #83888F;
     --dk-modal-gray: #979797; 
-    --primary-font-family: "Fraunces", serif;
-    --secondary-font-family: "Barlow", sans-serif;
+    --secondary-font-family: "Fraunces", serif;
+    --primary-font-family: "Barlow", sans-serif;
+
+    --step-0: clamp(1rem, 0.9543rem + 0.1951vw, 1.13rem);
+    --step-1: clamp(1.25rem, 1.1253rem + 0.5319vw, 1.5908rem);
+    --step-2: clamp(1.5625rem, 1.3112rem + 1.0721vw, 2.2493rem);
+    --step-3: clamp(1.9531rem, 1.5041rem + 1.916vw, 3.1805rem);
+    --step-4: clamp(2.4414rem, 1.6893rem + 3.2092vw, 4.4973rem);
+
+    --fw-300: 300;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-900: 900;
 }
+
+/**
+ * Global Styles
+ **/
+body {
+    background-color: var(--lt-slightly-off-white);
+    font-family: var(--primary-font-family);
+    color: var(--dk-gray-blue);
+    line-height: 1.5625;
+    font-size: var(--step-0);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--secondary-font-family);
+}
+
+h1 {
+    font-size: var(--step-4);
+    font-weight: var(--fw-900);
+    /* color: var(--lt-slightly-off-white); */
+    line-height: clamp(2.5rem, 2.317rem + 0.78vw, 3rem);
+}
+
+
+
