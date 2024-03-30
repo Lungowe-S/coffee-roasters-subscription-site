@@ -19,7 +19,7 @@
 
 <body>
   <header class="header">
-    <div class="header__wrapper">
+    <div class="header__wrapper wrapper">
       <div class="header__logo">
         <a class="logo__link" href="/starter-code/index.html">
           <img class="logo" src="/starter-code/assets/shared/desktop/logo.svg" alt="image of the website logo">
@@ -46,116 +46,117 @@
     </div>
   </header>
   <main class="main-plan">
-    <section class="hero-plan">
-      <div class="hero-plan__wrapper">
-        <h1 class="hero-plan__title">Create a plan</h1>
-        <p class="hero-plan__content">Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.</p>
-      </div>
-    </section>
-    <section class="procedures">
-      <div class="procedures__wrapper">
-        <div class="procedures__bar"></div>
-        <div class="procedure__wrapper">
-          <div class="procedure">
-            <h2 class="procedure__steps">01</h2>
-            <div class="procedure__description">
-              <h3 class="procedure__title">Pick your coffee</h3>
-              <p class="procedure__process">Select from our evolving range of artisan coffees. Our beans are ethically sources and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+    <div class="wrapper">
+      <section class="hero-plan">
+        <div class="hero-plan__wrapper">
+          <h1 class="hero-plan__title">Create a plan</h1>
+          <p class="hero-plan__content">Build a subscription plan that best fits your needs. We offer an assortment of the best artisan coffees from around the globe delivered fresh to your door.</p>
+        </div>
+      </section>
+      <section class="procedures">
+        <div class="procedures__wrapper">
+          <div class="procedures__bar"></div>
+          <div class="procedure__wrapper">
+            <div class="procedure">
+              <h2 class="procedure__steps">01</h2>
+              <div class="procedure__description">
+                <h3 class="procedure__title">Pick your coffee</h3>
+                <p class="procedure__process">Select from our evolving range of artisan coffees. Our beans are ethically sources and we pay fair prices for them. There are new coffees in all profiles every month for you to try out.</p>
+              </div>
             </div>
-          </div>
-          <div class="procedure">
-            <h2 class="procedure__steps">02</h2>
-            <div class="procedure__description">
-              <h3 class="procedure__title">Choose the frequency</h3>
-              <p class="procedure__process">Customize your order frequency, quantity, even your roast style and grind types. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+            <div class="procedure">
+              <h2 class="procedure__steps">02</h2>
+              <div class="procedure__description">
+                <h3 class="procedure__title">Choose the frequency</h3>
+                <p class="procedure__process">Customize your order frequency, quantity, even your roast style and grind types. Pause, skip or cancel your subscription with no commitment through our online portal.</p>
+              </div>
             </div>
-          </div>
-          <div class="procedure">
-            <h2 class="procedure__steps">03</h2>
-            <div class="procedure__description">
-              <h3 class="procedure__title">Receive and enjoy!</h3>
-              <p class="procedure__process">We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curates to provide a distinct tasting experience.</p>
+            <div class="procedure">
+              <h2 class="procedure__steps">03</h2>
+              <div class="procedure__description">
+                <h3 class="procedure__title">Receive and enjoy!</h3>
+                <p class="procedure__process">We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning world-class coffees curates to provide a distinct tasting experience.</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="subscriptions">
-      <div class="subscriptions__wrapper">
-        <div class="subscription">
-          <div class="subscription__header">
-            <h2>
-              <button>
-                <span class="subscription__title">How do you drink your coffee?</span>
-                <div class="subscription__indicator">
-                  <img src="./assets/plan/desktop/icon-arrow.svg" alt="Arrow icon that will open or close the subscription accordion">
+      </section>
+      <section class="subscriptions">
+        <div class="subscriptions__wrapper">
+          <div class="subscription">
+            <div class="subscription__header">
+              <h2>
+                <button>
+                  <span class="subscription__title">How do you drink your coffee?</span>
+                  <div class="subscription__indicator">
+                    <img src="./assets/plan/desktop/icon-arrow.svg" alt="Arrow icon that will open or close the subscription accordion">
+                  </div>
+                </button>
+              </h2>
+            </div>
+            <div class="subscription__content">
+              <fieldset class="subscription__options">
+                <div class="subscription-coffee__drink-types capsules">
+                  <input type="radio" class="subscription-radio" id="drink-type__capsule" name="status">
+                  <label for="drink-type__capsule" class="subscription-coffee__drink-type capsule">
+                    <h3>Capsule</h3>
+                    <p class="subscription-coffee__content">Compatible with Nespresso systems and similar brewers.</p>
+                  </label>
                 </div>
-              </button>
-            </h2>
-          </div>
-          <div class="subscription__content">
-            <fieldset class="subscription__options">
-              <div class="subscription-coffee__drink-types capsules">
-                <input type="radio" class="subscription-radio" id="drink-type__capsule" name="status">
-                <label for="drink-type__capsule" class="subscription-coffee__drink-type capsule">
-                  <h3>Capsule</h3>
-                  <p class="subscription-coffee__content">Compatible with Nespresso systems and similar brewers.</p>
-                </label>
-              </div>
-              <div class="subscription-coffee__drink-types filters">
-                <input type="radio" class="subscription-radio" id="drink-type__filter" name="status">
-                <label for="drink-type__filter" class="subscription-coffee__drink-type filter">
-                  <h3>Filter</h3>
-                  <p class="subscription-coffee__content">For pour over or drip methods like Aeropress, Chemex, and V60.</p>
-                </label>
-              </div>
-              <div class="subscription-coffee__drink-types espresso">
-                <input type="radio" class="subscription-radio" id="drink-type__espresso" name="status">
-                <label for="drink-type__espresso" class="subscription-coffee__drink-type espresso">
-                  <h3>Espresso</h3>
-                  <p class="subscription-coffee__content">For pour over or drip methods like Aeropress, Chemex, and V60.</p>
-                </label>
-              </div>
-            </fieldset>
-          </div>
-        </div>
-        <div class="subscription">
-          <div class="subscription__header">
-            <h2>
-              <button>
-                <span class="subscription__title">What type of coffee?</span>
-                <div class="subscription__indicator">
-                  <img src="./assets/plan/desktop/icon-arrow.svg" alt="Arrow icon that will open or close the subscription accordion">
+                <div class="subscription-coffee__drink-types filters">
+                  <input type="radio" class="subscription-radio" id="drink-type__filter" name="status">
+                  <label for="drink-type__filter" class="subscription-coffee__drink-type filter">
+                    <h3>Filter</h3>
+                    <p class="subscription-coffee__content">For pour over or drip methods like Aeropress, Chemex, and V60.</p>
+                  </label>
                 </div>
-              </button>
-            </h2>
+                <div class="subscription-coffee__drink-types espresso">
+                  <input type="radio" class="subscription-radio" id="drink-type__espresso" name="status">
+                  <label for="drink-type__espresso" class="subscription-coffee__drink-type espresso">
+                    <h3>Espresso</h3>
+                    <p class="subscription-coffee__content">For pour over or drip methods like Aeropress, Chemex, and V60.</p>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
           </div>
-          <div class="subscription__content">
-            <fieldset class="subscription__options">
-              <div class="subscription-coffee__types single-origin">
-                <input type="radio" class="subscription-radio" id="coffee-type__single-origin" name="status">
-                <label for="coffee-type__single-origin" class="subscription-coffee__type s-origin">
-                  <h3>Single Origin</h3>
-                  <p class="subscription-coffee__content">Distinct, high coffee from a specific family .</p>
-                </label>
-              </div>
-              <div class="subscription-coffee__types decaf">
-                <input type="radio" class="subscription-radio" id="coffee-type__decaf" name="status">
-                <label for="coffee-type__decaf" class="subscription-coffee__type decaf">
-                  <h3>Decaf</h3>
-                  <p class="subscription-coffee__content">Just like regular coffee, except the caffeine has been removed.</p>
-                </label>
-              </div>
-              <div class="subscription-coffee__types blended">
-                <input type="radio" class="subscription-radio" id="coffee-type__blended" name="status">
-                <label for="coffee-type__blended" class="subscription-coffee__type blended">
-                  <h3>Espresso</h3>
-                  <p class="subscription-coffee__content">Combination of two or three dark roasted beans of organic coffees.</p>
-                </label>
-              </div>
-            </fieldset>
+          <div class="subscription">
+            <div class="subscription__header">
+              <h2>
+                <button>
+                  <span class="subscription__title">What type of coffee?</span>
+                  <div class="subscription__indicator">
+                    <img src="./assets/plan/desktop/icon-arrow.svg" alt="Arrow icon that will open or close the subscription accordion">
+                  </div>
+                </button>
+              </h2>
+            </div>
+            <div class="subscription__content">
+              <fieldset class="subscription__options">
+                <div class="subscription-coffee__types single-origin">
+                  <input type="radio" class="subscription-radio" id="coffee-type__single-origin" name="status">
+                  <label for="coffee-type__single-origin" class="subscription-coffee__type s-origin">
+                    <h3>Single Origin</h3>
+                    <p class="subscription-coffee__content">Distinct, high coffee from a specific family .</p>
+                  </label>
+                </div>
+                <div class="subscription-coffee__types decaf">
+                  <input type="radio" class="subscription-radio" id="coffee-type__decaf" name="status">
+                  <label for="coffee-type__decaf" class="subscription-coffee__type decaf">
+                    <h3>Decaf</h3>
+                    <p class="subscription-coffee__content">Just like regular coffee, except the caffeine has been removed.</p>
+                  </label>
+                </div>
+                <div class="subscription-coffee__types blended">
+                  <input type="radio" class="subscription-radio" id="coffee-type__blended" name="status">
+                  <label for="coffee-type__blended" class="subscription-coffee__type blended">
+                    <h3>Espresso</h3>
+                    <p class="subscription-coffee__content">Combination of two or three dark roasted beans of organic coffees.</p>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
           </div>
-        </div>
           <div class="subscription">
             <div class="subscription__header">
               <h2>
@@ -192,100 +193,101 @@
                 </div>
               </fieldset>
             </div>
-        </div>
-        <div class="subscription">
-          <div class="subscription__header">
-            <h2>
-              <button>
-                <span class="subscription__title">Want us to grind them?</span>
-                <div class="subscription__indicator">
-                  <img src="./assets/plan/desktop/icon-arrow.svg" alt="Arrow icon that will open or close the subscription accordion">
+          </div>
+          <div class="subscription">
+            <div class="subscription__header">
+              <h2>
+                <button>
+                  <span class="subscription__title">Want us to grind them?</span>
+                  <div class="subscription__indicator">
+                    <img src="./assets/plan/desktop/icon-arrow.svg" alt="Arrow icon that will open or close the subscription accordion">
+                  </div>
+                </button>
+              </h2>
+            </div>
+            <div class="subscription__content">
+              <fieldset class="subscription__options">
+                <div class="subscription-coffee__grinding wholebean">
+                  <input type="radio" class="subscription-radio" id="coffee-grind__wholebean" name="status">
+                  <label for="coffee-grind__wholebean" class="subscription-coffee__grind wholebean">
+                    <h3>Wholebean</h3>
+                    <p class="subscription-coffee__content">Best choice if you cherish the full sensory experience.</p>
+                  </label>
                 </div>
-              </button>
-            </h2>
-          </div>
-          <div class="subscription__content">
-            <fieldset class="subscription__options">
-              <div class="subscription-coffee__grinding wholebean">
-                <input type="radio" class="subscription-radio" id="coffee-grind__wholebean" name="status">
-                <label for="coffee-grind__wholebean" class="subscription-coffee__grind wholebean">
-                  <h3>Wholebean</h3>
-                  <p class="subscription-coffee__content">Best choice if you cherish the full sensory experience.</p>
-                </label>
-              </div>
-              <div class="subscription-coffee__grinding filter">
-                <input type="radio" class="subscription-radio" id="coffee-grind__filter" name="status">
-                <label for="coffee-grind__filter" class="subscription-coffee__grind filter">
-                  <h3>Filter</h3>
-                  <p class="subscription-coffee__content">For drip or pour-over coffee methods such as VBD or Aeropress.</p>
-                </label>
-              </div>
-              <div class="subscription-coffee__grinding cafetiere">
-                <input type="radio" class="subscription-radio" id="coffee-grind__cafetiere" name="status">
-                <label for="coffee-grind__cafetiere" class="subscription-coffee__grind cafetiere">
-                  <h3>Cafetiere</h3>
-                  <p class="subscription-coffee__content">Course ground beans specially suited for french press coffee.</p>
-                </label>
-              </div>
-            </fieldset>
-          </div>
-        </div>
-        <div class="subscription">
-          <div class="subscription__header">
-            <h2>
-              <button>
-                <span class="subscription__title">How often should we deliver?</span>
-                <div class="subscription__indicator">
-                  <img src="./assets/plan/desktop/icon-arrow.svg" alt="Arrow icon that will open or close the subscription accordion">
+                <div class="subscription-coffee__grinding filter">
+                  <input type="radio" class="subscription-radio" id="coffee-grind__filter" name="status">
+                  <label for="coffee-grind__filter" class="subscription-coffee__grind filter">
+                    <h3>Filter</h3>
+                    <p class="subscription-coffee__content">For drip or pour-over coffee methods such as VBD or Aeropress.</p>
+                  </label>
                 </div>
-              </button>
-            </h2>
+                <div class="subscription-coffee__grinding cafetiere">
+                  <input type="radio" class="subscription-radio" id="coffee-grind__cafetiere" name="status">
+                  <label for="coffee-grind__cafetiere" class="subscription-coffee__grind cafetiere">
+                    <h3>Cafetiere</h3>
+                    <p class="subscription-coffee__content">Course ground beans specially suited for french press coffee.</p>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
           </div>
-          <div class="subscription__content">
-            <fieldset class="subscription__options">
-              <div class="subscription-coffee__deliveries weekly">
-                <input type="radio" class="subscription-radio" id="coffee-delivery__weekly" name="status">
-                <label for="coffee-delivery__weekly" class="subscription-coffee__delivery weekly">
-                  <h3>Every Week</h3>
-                  <p class="subscription-coffee__content">$7.20 per shipment. Includes free first-class shipping.</p>
-                </label>
-              </div>
-              <div class="subscription-coffee__deliveries bi-weekly">
-                <input type="radio" class="subscription-radio" id="coffee-delivery__bi-weekly" name="status">
-                <label for="coffee-delivery__bi-weekly" class="subscription-coffee__delivery bi-weekly">
-                  <h3>Every 2 weeks</h3>
-                  <p class="subscription-coffee__content">$9.60 per shipment. Includes free priority shipping.</p>
-                </label>
-              </div>
-              <div class="subscription-coffee__deliveries monthly">
-                <input type="radio" class="subscription-radio" id="coffee-delivery__monthly" name="status">
-                <label for="coffee-delivery__monthly" class="subscription-coffee__delivery monthly">
-                  <h3>Every Month</h3>
-                  <p class="subscription-coffee__content">$12.00 per shipment. Includes free priority shipping.</p>
-                </label>
-              </div>
-            </fieldset>
+          <div class="subscription">
+            <div class="subscription__header">
+              <h2>
+                <button>
+                  <span class="subscription__title">How often should we deliver?</span>
+                  <div class="subscription__indicator">
+                    <img src="./assets/plan/desktop/icon-arrow.svg" alt="Arrow icon that will open or close the subscription accordion">
+                  </div>
+                </button>
+              </h2>
+            </div>
+            <div class="subscription__content">
+              <fieldset class="subscription__options">
+                <div class="subscription-coffee__deliveries weekly">
+                  <input type="radio" class="subscription-radio" id="coffee-delivery__weekly" name="status">
+                  <label for="coffee-delivery__weekly" class="subscription-coffee__delivery weekly">
+                    <h3>Every Week</h3>
+                    <p class="subscription-coffee__content">$7.20 per shipment. Includes free first-class shipping.</p>
+                  </label>
+                </div>
+                <div class="subscription-coffee__deliveries bi-weekly">
+                  <input type="radio" class="subscription-radio" id="coffee-delivery__bi-weekly" name="status">
+                  <label for="coffee-delivery__bi-weekly" class="subscription-coffee__delivery bi-weekly">
+                    <h3>Every 2 weeks</h3>
+                    <p class="subscription-coffee__content">$9.60 per shipment. Includes free priority shipping.</p>
+                  </label>
+                </div>
+                <div class="subscription-coffee__deliveries monthly">
+                  <input type="radio" class="subscription-radio" id="coffee-delivery__monthly" name="status">
+                  <label for="coffee-delivery__monthly" class="subscription-coffee__delivery monthly">
+                    <h3>Every Month</h3>
+                    <p class="subscription-coffee__content">$12.00 per shipment. Includes free priority shipping.</p>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="order-summary">
-      <div class="order-summary__wrapper">
-        <h2 class="order-summary__title">Order Summary</h2>
-        <p class="order-summary__details">"I drink my coffee as <span>Filter</span>, with a <span>Decaf</span> type of beans. <span>250g</span> ground ala <span>Cafetiere</span>, sent to me <span>Every Week</span>."</p>
-        <button class="order-summary__btn">Create my plan!</button>
-      </div>
-      <div class="summary-modal">
-        <div class="summary-modal__wrapper">
-          <h3 class="summary-modal__title">Order Summary</h3>
-          <div class="summary-modal__content">
-            <p>"I drink my coffee as <span>Filter</span>, with a <span>Decaf</span> type of beans. <span>250g</span> ground ala <span>Cafetiere</span>, sent to me <span>Every Week</span>."</p>
-            <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discounts can also be redeemed at the checkout.</p>
-            <button class="checkout__btn">Checkout - $14.00/mo</button>
+      </section>
+      <section class="order-summary">
+        <div class="order-summary__wrapper">
+          <h2 class="order-summary__title">Order Summary</h2>
+          <p class="order-summary__details">"I drink my coffee as <span>Filter</span>, with a <span>Decaf</span> type of beans. <span>250g</span> ground ala <span>Cafetiere</span>, sent to me <span>Every Week</span>."</p>
+          <button class="order-summary__btn">Create my plan!</button>
+        </div>
+        <div class="summary-modal">
+          <div class="summary-modal__wrapper">
+            <h3 class="summary-modal__title">Order Summary</h3>
+            <div class="summary-modal__content">
+              <p>"I drink my coffee as <span>Filter</span>, with a <span>Decaf</span> type of beans. <span>250g</span> ground ala <span>Cafetiere</span>, sent to me <span>Every Week</span>."</p>
+              <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discounts can also be redeemed at the checkout.</p>
+              <button class="checkout__btn">Checkout - $14.00/mo</button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
