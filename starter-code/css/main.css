@@ -54,14 +54,32 @@ h1 {
 /**
  * Utilities
  **/
- .flow>*+* {
-     margin-block-start: var(--flow-space, 1em);
- }
+.flow>*+* {
+    margin-block-start: var(--flow-space, 1em);
+}
 
- .wrapper {
-     padding-left: clamp(1.5rem, 0.22rem + 5.46vw, 5rem);
-     padding-right: clamp(1.5rem, 0.22rem + 5.46vw, 5rem);
-     margin-left: auto;
-     margin-right: auto;
- }
+.wrapper {
+    padding-left: clamp(1.5rem, 0.22rem + 5.46vw, 5rem);
+    padding-right: clamp(1.5rem, 0.22rem + 5.46vw, 5rem);
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.region-1 {
+    padding-top: clamp(7.5rem, 7.095rem + 1.73vw, 8.5rem);
+    padding-bottom: clamp(7.5rem, 5.473rem + 8.65vw, 12.5rem)
+}
+
+.region-2 {
+    padding-top: clamp(7.5rem, 5.473rem + 8.65vw, 12.5rem);
+    padding-bottom: clamp(7.5rem, 5.473rem + 8.65vw, 12.5rem);
+}
+
+.region-3 {
+    padding-top: clamp(7.5rem, 6.284rem + 5.19vw, 10.5rem);
+    padding-bottom: clamp(7.5rem, 6.284rem + 5.19vw, 10.5rem);
+}
+
+.region-4 {
+    padding-bottom: clamp(7.5rem, 6.284rem + 5.19vw, 10.5rem);
+}
