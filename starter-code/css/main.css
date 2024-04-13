@@ -85,6 +85,21 @@ h1 {
 }
 
 /**
+ * Composition
+ */
+ .g-center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .repel {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+/**
  * Block Styles
  **/
 
@@ -92,13 +107,8 @@ h1 {
  .header__wrapper {
      padding-top: clamp(2rem, 1.736rem + 1.13vw, 2.723rem);
      padding-bottom: clamp(2.5rem, 2.431rem + 0.29vw, 2.688rem);
+    position: relative;
  }
-
- .repel {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
- }   
 
  .cluster {
     display: none;
@@ -106,4 +116,16 @@ h1 {
 
  .cluster.nav__open {
     display: flex;
- }
+    flex-direction: column;
+    padding-left: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center
+}
+
+/* == Footer == */
+
+.footer__wrapper {
+    background-color: var(--dk-nimbus-gray);
+}
