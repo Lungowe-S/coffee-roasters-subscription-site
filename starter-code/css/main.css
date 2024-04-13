@@ -83,3 +83,27 @@ h1 {
 .region-4 {
     padding-bottom: clamp(7.5rem, 6.284rem + 5.19vw, 10.5rem);
 }
+
+/**
+ * Block Styles
+ **/
+
+ /* == Header == */
+ .header__wrapper {
+     padding-top: clamp(2rem, 1.736rem + 1.13vw, 2.723rem);
+     padding-bottom: clamp(2.5rem, 2.431rem + 0.29vw, 2.688rem);
+ }
+
+ .repel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }   
+
+ .cluster {
+    display: none;
+ }
+
+ .cluster.nav__open {
+    display: flex;
+ }
