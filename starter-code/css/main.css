@@ -51,6 +51,14 @@ h1 {
     line-height: clamp(2.5rem, 2.317rem + 0.78vw, 3rem);
 }
 
+ul {
+    padding-left: 0;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
 /**
  * Utilities
  **/
@@ -99,6 +107,12 @@ h1 {
      justify-content: space-between;
  }
 
+ .f-center {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+ }
+
 /**
  * Block Styles
  **/
@@ -117,11 +131,22 @@ h1 {
  .cluster.nav__open {
     display: flex;
     flex-direction: column;
-    padding-left: 0;
+    gap: 2rem;
+    padding: 2.5rem 0 2.5rem 0;
     position: absolute;
+    margin: 0;
     left: 0;
     right: 0;
-    text-align: center
+    top: 64px;
+    text-align: center;
+    font-weight: var(--fw-700);
+    font-size: 1.5rem;
+    font-family: var(--secondary-font-family);
+    background: linear-gradient(0deg, rgba(238, 233, 233, 1) 6%, rgba(254, 252, 247, 1) 36%);
+}
+
+.hamburger__menu {
+    cursor: pointer;
 }
 
 /* == Footer == */
