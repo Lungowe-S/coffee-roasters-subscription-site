@@ -92,6 +92,31 @@ ul li a {
     padding-bottom: clamp(7.5rem, 6.284rem + 5.19vw, 10.5rem);
 }
 
+.region-5 {
+    padding-top: clamp(3.375rem, 3.505rem + -0.65vw, 2.938rem);
+    padding-bottom: clamp(3.375rem, 3.505rem + -0.65vw, 2.938rem);
+    padding-left: clamp(3.375rem, 2.801rem + 2.87vw, 5.313rem);
+    padding-right: clamp(3.375rem, 2.801rem + 2.87vw, 5.313rem);
+}
+
+    /* == Mobile Nav == */
+.cluster {
+    display: none;
+}
+
+.cluster.nav__open {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 0 2.5rem 0;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: 64px;
+    background: linear-gradient(0deg, rgba(238, 233, 233, 1) 6%, rgba(254, 252, 247, 1) 36%);
+}
+
 /**
  * Composition
  */
@@ -107,6 +132,14 @@ ul li a {
      justify-content: space-between;
  }
 
+ .repel-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+ }
+
+
  .f-center {
     display: flex;
     align-items: center;
@@ -119,31 +152,18 @@ ul li a {
 
  /* == Header == */
  .header__wrapper {
-     padding-top: clamp(2rem, 1.736rem + 1.13vw, 2.723rem);
-     padding-bottom: clamp(2.5rem, 2.431rem + 0.29vw, 2.688rem);
+    padding-top: clamp(2rem, 1.736rem + 1.13vw, 2.723rem);
+    padding-bottom: clamp(2.5rem, 2.431rem + 0.29vw, 2.688rem);
     position: relative;
  }
 
- .cluster {
-    display: none;
- }
-
- .cluster.nav__open {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2.5rem 0 2.5rem 0;
-    position: absolute;
-    margin: 0;
-    left: 0;
-    right: 0;
-    top: 64px;
-    text-align: center;
+ .nav__menu {
     font-weight: var(--fw-700);
     font-size: 1.5rem;
     font-family: var(--secondary-font-family);
-    background: linear-gradient(0deg, rgba(238, 233, 233, 1) 6%, rgba(254, 252, 247, 1) 36%);
-}
+    text-align: center;
+    text-transform: capitalize;
+ }
 
 .hamburger__menu {
     cursor: pointer;
@@ -153,4 +173,21 @@ ul li a {
 
 .footer__wrapper {
     background-color: var(--dk-nimbus-gray);
+}
+
+.footer__menu {
+    flex-direction: column;
+    text-transform: uppercase;
+    color: var(--dk-cloudy-gray);
+    font-size: 0.75rem;
+    font-weight: var(--fw-600);
+    letter-spacing: 0.92px;
+    line-height: 1.25;
+    margin-bottom: 0;
+    margin-top: 2.0275rem;
+}
+
+.social__icons-list {
+    margin-bottom: 0;
+    margin-top: 2.035rem;
 }
