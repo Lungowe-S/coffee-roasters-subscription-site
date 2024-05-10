@@ -22,6 +22,8 @@
     --step-3: clamp(1.9531rem, 1.5041rem + 1.916vw, 3.1805rem);
     --step-4: clamp(2.4414rem, 1.6893rem + 3.2092vw, 4.4973rem);
 
+    --space-l-xl: clamp(2.25rem, 1.7283rem + 2.6087vi, 3.75rem);
+
     --fw-300: 300;
     --fw-600: 600;
     --fw-700: 700;
@@ -50,6 +52,7 @@ h1 {
     font-weight: var(--fw-900);
     /* color: var(--lt-slightly-off-white); */
     line-height: clamp(2.5rem, 2.317rem + 0.78vw, 3rem);
+    margin-top: 0;
 }
 
 ul {
@@ -58,6 +61,18 @@ ul {
 
 ul li a {
     text-decoration: none;
+}
+
+.button {
+    border: none;
+    padding: 15px 31px 15px 31px;
+    width: 13.5625rem;
+    justify-self: center;
+    font-family: var(--secondary-font-family);
+    background-color: var(--dk-forest-green);
+    border-radius: 6px;
+    color: inherit;
+    font-weight: var(--fw-700);
 }
 
 /**
@@ -181,9 +196,18 @@ ul li a {
     background-image: url("../assets/home/mobile/image-hero-coffeepress.jpg");
     background-repeat: no-repeat;
     height: clamp(31.25rem, 28.409rem + 12.12vw, 37.5rem);
-    background-size: 100%;
+    background-size: cover;
     text-align: center;
     color: var(--lt-slightly-off-white);
+    border-radius: 10px;
+}
+
+.hero__content-wrapper {
+    padding-top: clamp(6.25rem, 5.819rem + 1.84vw, 7.313rem);
+    padding-bottom: clamp(6.188rem, 5.757rem + 1.84vw, 7.25rem);
+    padding-left: clamp(1.5rem, -0.046rem + 6.59vw, 5.313rem);
+    padding-right: 1.5rem;
+    height: 100%;
 }
 
 /* == Footer == */
@@ -218,6 +242,16 @@ ul li a {
  **/
 
 @media screen and (min-width: 48rem) {
+    /* == Hero == */
+    .hero {
+        background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg");
+        text-align: left;
+    }
+
+    .button.hero__button {
+        justify-self: start;
+    }
+
     /* == Footer == */
     .footer__menu {
         flex-direction: row;
