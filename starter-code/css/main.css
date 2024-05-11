@@ -22,7 +22,8 @@
     --step-3: clamp(1.9531rem, 1.5041rem + 1.916vw, 3.1805rem);
     --step-4: clamp(2.4414rem, 1.6893rem + 3.2092vw, 4.4973rem);
 
-    --space-l-xl: clamp(2.25rem, 1.7283rem + 2.6087vi, 3.75rem);
+    /* --space-l-xl: clamp(2.25rem, 1.7283rem + 2.6087vi, 3.75rem); */
+    --space-l-xl: clamp(2rem, 1.5217rem + 2.3913vi, 3.375rem);
 
     --fw-300: 300;
     --fw-600: 600;
@@ -80,6 +81,10 @@ ul li a {
  **/
 .flow>*+* {
     margin-block-start: var(--flow-space, 1em);
+}
+
+.prose {
+    --flow-space: var(--space-l-xl);
 }
 
 .wrapper {
@@ -202,6 +207,10 @@ ul li a {
     border-radius: 10px;
 }
 
+.hero__wrapper {
+    height: 100%;
+}
+
 .hero__content-wrapper {
     padding-top: clamp(6.25rem, 5.819rem + 1.84vw, 7.313rem);
     padding-bottom: clamp(6.188rem, 5.757rem + 1.84vw, 7.25rem);
@@ -248,8 +257,20 @@ ul li a {
         text-align: left;
     }
 
+    .hero__content-wrapper {
+        justify-content: start;
+    }
+
     .button.hero__button {
         justify-self: start;
+    }
+
+    .hero p {
+        max-width: 45ch;
+    }
+
+    h1 {
+        max-width: 12ch;
     }
 
     /* == Footer == */
@@ -260,6 +281,12 @@ ul li a {
 }
 
 @media screen and (min-width: 75rem) {
+    /* == Hero == */
+    .hero {
+        background-image: url("../assets/home/desktop/image-hero-coffeepress.jpg");
+        background-position: right center;
+    }
+
     /* == Footer == */
     .footer__menu {
          margin-top: 0rem;
