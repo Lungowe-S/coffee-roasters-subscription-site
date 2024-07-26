@@ -26,6 +26,8 @@
     --space-s-m: clamp(1rem, 0.7609rem + 1.1957vi, 1.6875rem);
     --space-l-xl: clamp(2rem, 1.5217rem + 2.3913vi, 3.375rem);
 
+    --proc-tb: clamp(12.5rem, 4.905rem + 15.82vw, 18.75rem);
+
     --fw-300: 300;
     --fw-600: 600;
     --fw-700: 700;
@@ -129,7 +131,8 @@ ul li a {
 }
 
 .pr-m {
-    margin-block-start: 5rem;
+    padding-block-start: 5rem;
+    padding-block-end: 4rem;
 }
 
 .wrapper {
@@ -199,6 +202,10 @@ ul li a {
     align-items: center;
     text-align: center;
     gap: 3rem;
+ }
+
+ .g {
+    display: grid;
  }
 
  .repel {
@@ -373,10 +380,6 @@ ul li a {
     font-size: clamp(0.938rem, 0.915rem + 0.1vw, 1rem);
 }
 
-/* .procedure:nth-child(3) p {
-    max-width: 37ch;
-} */
-
 .procedures__button {
     color: var(--lt-slightly-off-white);
 }
@@ -529,11 +532,13 @@ h1 {
 }
 
 .procedures__wrapper {
-    max-width: 1100px;;
+    max-width: 1100px;
+    margin-left: clamp(0rem, -5.774rem + 12.03vw, 4rem);
+    margin-right: clamp(0rem, -5.774rem + 12.03vw, 4rem);
 }
 
 .procedure__wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(var(--proc-tb), 1fr));
     gap: clamp(0.625rem, -5.831rem + 13.45vw, 5.938rem);
     text-align: left;
     justify-items: start;
@@ -555,6 +560,10 @@ h1 {
 
 .procedure:nth-child(2) p {
     max-width: 25ch;
+}
+
+.procedures__button {
+    justify-self: start;
 }
 
  
@@ -630,9 +639,19 @@ h1 {
     }
     
     /* == Procedures == */
+    .procedure:nth-child(1) p {
+        max-width: 31.35ch;
+    }
+
+    .procedure:nth-child(2) p {
+        max-width: 31ch;
+    }
+
+    .procedure:nth-child(3) p {
+         max-width: 29ch;
+    }
     
 }
-
 @media screen and (min-width: 75rem) {
     /* == Hero == */
     .hero {
